@@ -65,6 +65,4 @@ dependencies:
   - zlib=1.2.11
   - zstd=1.4.5
   - pip:
-    - pip==21.3
-    - pykonal==0.3.2b3
 prefix: /home/emmanuel/anaconda3/envs/pykonal

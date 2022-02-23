@@ -14,7 +14,6 @@ class Vel3DModel():
     """
     Builds a 3D grid in spherical coordinates with interpolated 
     velocity values from specified  1d velocity model in depth.
-
     THe grid is builded according to specific latitudes, longitudes, 
     and depth dimensions and  1d velocity model in depth
     """
@@ -46,8 +45,6 @@ class Vel3DModel():
             Number of points in longitude 
         radial: float ; default: 6371.0
             Earth radious
-
-
         Attributes:
         ----------
         min_coords: array
@@ -55,11 +52,9 @@ class Vel3DModel():
             0 <= rho <= Earth_radious
             0 <= theta <= 360
             0 <= phi <= 180
-
         node_intervals: array
             Intervals in spherical coordinates (rho,theta,phi)
             rho in km; lat in radians, lon in radians
-
         """
         self.vel1dfile = vel1dfile
         self.min_lat = min_lat
@@ -92,7 +87,6 @@ class Vel3DModel():
         """
         Parameters:
         filepath: file path will be saved
-
         Returns:
         Make the directories needed to save the file.
         If the file is already exist, then ask to the user if want to replace it.
@@ -121,7 +115,6 @@ class Vel3DModel():
         ----------
         phase: str
             p or s
-
         Returns:
         --------
         It interpolates the phase velocity values in the builded grid.
@@ -146,7 +139,6 @@ class Vel3DModel():
             p or s
         out: str
             path to export the velocity model in hdf5 files.
-
         Returns:
         --------
         Gets the velocity model.
@@ -177,7 +169,6 @@ class ReadVel3DModel():
         models: dict
             key: str: "Name of the model"
             value: str: HD5F model path 
-
         Attributes:
         models: dict
             key: str: "Name of the model"
@@ -220,7 +211,6 @@ class ReadVel3DModel():
     def plot_1Dmodel(self,save=None):
         """
         Plot 1D velocity model in depth.
-
         Parameters:
         -----------
         save: str
@@ -262,7 +252,6 @@ class ReadVel3DModel():
     def _make_3Dplot(self,ax,ngraph,fig=None ):
         """
         util method that will be used to plot 3D velocity model.
-
         Parameters:
         -----------
         ax: Matplotlib axis
@@ -311,7 +300,6 @@ class ReadVel3DModel():
     def plot_3Dmodel(self,save=None):
         """
         Plot 3D velocity model.
-
         Parameters:
         -----------
         save: str
@@ -385,4 +373,3 @@ if __name__ == "__main__":
     # node_intervals = read_vel.node_intervals
     # read_vel.plot_1Dmodel("figures/vel_zmodel.png")
     # read_vel.plot_3Dmodel("figures/vel_model.png")
-    

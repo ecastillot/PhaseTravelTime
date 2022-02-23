@@ -505,4 +505,3 @@ if __name__ == "__main__":
     #                             ["CM"],["ZAR","PTB","HEL"],
     #                             origin=UTCDateTime("2021-10-29 17:22:30") )
     # print(data)
-

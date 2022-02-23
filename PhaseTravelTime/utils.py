@@ -55,7 +55,6 @@ def isfile(filepath):
     """
     Parameters:
     filepath: file path will be saved
-
     Returns:
     Make the directories needed to save the file.
     If the file is already exist, then ask to the user if want to replace it.
@@ -123,7 +122,6 @@ def get_picks(seiscomp_file, from_format="SC3ML",version="0.10"):
         path of the sc3ml seiscomp file that contains only one event
     export: str (deault : None)
         Exports the picks from the respective event to 'csv' or 'excel' file. None don't create any file, then only returns.
-
     returns
     -------
     appended_events : list

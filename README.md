@@ -1,5 +1,6 @@
 # PhaseTravelTime 
-Easy way to calculate P and S seismic travel times based on 1D velocity model
+An easy way to calculate P and S seismic travel times based on 1D velocity model
+![PTT](examples/BAR2.png)<!-- .element width="700"-->
 
 ## Installation
 ```
